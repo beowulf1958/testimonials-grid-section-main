@@ -1,0 +1,55 @@
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+.flex {
+  display: flex;
+  background-position: center top;
+}
+
+.clr-white {
+  color: var(--white-00);
+  h2 {
+    span {
+    color: var(--white-50);
+    }
+  } 
+  p:last-of-type {
+    color: var(--white-70);
+  }
+}
+.clr-blue {
+  color: var(--gray-blue);
+  h2 {
+    span {
+    color: var(--light-gray);
+    }
+  } 
+  p:last-of-type {
+    color: var(--light-gray);
+  }
+}
+
+.daniel {
+  background-image: url("app/images/bg-pattern-quotation.svg ");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--violet);
+  margin-top: 30px;
+}
+.jonathan {
+  background-color: var(--gray-blue);
+}
+.jeanette, .kira {
+  background-color: var(--white-00);
+}
+.patrick {
+  background-color: var(--dark-blue);
+}
+

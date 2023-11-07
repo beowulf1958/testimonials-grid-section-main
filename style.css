@@ -1,0 +1,169 @@
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --gray-blue: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --white-00: hsl(0, 0%, 100%);
+  --white-50: hsla(0, 0%, 100%, 0.5);
+  --white-70: hsla(0, 0%, 100%, 0.7);
+  --light-gray: hsl(0, 0%, 81%);
+  --grayish-blue: hsl(210, 46%, 95%);
+  --ff-main: "Barlow Semi Condensed", sans-serif;
+  --fs-main: 0.8125rem;
+  --fw-500: 500;
+  --fw-600: 600;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+  background-position: center top;
+}
+
+.clr-white {
+  color: var(--white-00);
+}
+.clr-white h2 span {
+  color: var(--white-50);
+}
+.clr-white p:last-of-type {
+  color: var(--white-70);
+}
+
+.clr-blue {
+  color: var(--gray-blue);
+}
+.clr-blue h2 span {
+  color: var(--light-gray);
+}
+.clr-blue p:last-of-type {
+  color: var(--light-gray);
+}
+
+.daniel {
+  background-image: url("app/images/bg-pattern-quotation.svg ");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: var(--violet);
+  margin-top: 30px;
+}
+
+.jonathan {
+  background-color: var(--gray-blue);
+}
+
+.jeanette, .kira {
+  background-color: var(--white-00);
+}
+
+.patrick {
+  background-color: var(--dark-blue);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: var(--ff-main);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /*   height: 100vh; */
+}
+
+.card {
+  width: 90%;
+  border-radius: 0.5rem;
+  font-size: var(--ff-main);
+  padding: 20px;
+}
+.card img {
+  width: 50px;
+  min-height: 50px;
+  border: 2px solid var(--white-00);
+  border-radius: 50%;
+}
+.card h2 {
+  font-size: 1rem;
+  padding-left: 20px;
+}
+.card * {
+  margin-bottom: 10px;
+}
+
+/* Footer styles*/
+.attribution {
+  color: var(--dark-blue);
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(180, 62%, 25%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: hsl(277, 64%, 61%);
+}
+
+/* desktop styles */
+@media screen and (min-width: 400px) {
+  body {
+    background-color: var(--light-gray);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  main {
+    width: 80%;
+    /* grid container */
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  }
+  .card {
+    width: 100%;
+  }
+  .daniel {
+    margin-top: 0;
+    grid-area: daniel;
+  }
+  .jonathan {
+    grid-area: jonathan;
+  }
+  .kira {
+    grid-area: kira;
+  }
+  .patrick {
+    grid-area: patrick;
+  }
+  .jeanette {
+    grid-area: jeanette;
+  }
+}/*# sourceMappingURL=style.css.map */
