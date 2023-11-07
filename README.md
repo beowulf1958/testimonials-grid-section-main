@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub?share=true)
 - Live Site URL: [Live site URL](https://willowy-fairy-35d18e.netlify.app/)
 
 ## My process
